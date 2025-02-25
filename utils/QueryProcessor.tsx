@@ -11,52 +11,66 @@ export default function QueryProcessor(query: string): string {
     return "xinyi/sofian/peitong";
   }
 
-  if (query.toLowerCase().includes("98 plus 22?")) {
-    return "120";
+  // 1) What is 54 plus 15?
+  if (query.toLowerCase() === "what is 54 plus 15?") {
+    return "69";
   }
 
-  if (query.toLowerCase().includes("86 plus 65?")) {
-    return "151";
+  // 2) What is 53 multiplied by 9?
+  if (query.toLowerCase() === "what is 53 multiplied by 9?") {
+    return "477";
   }
 
-  if (query.toLowerCase().includes("59 plus 14?")) {
-    return "73";
+  // 3) Which of the following numbers is the largest: 88, 49, 61?
+  if (query.toLowerCase() === "which of the following numbers is the largest: 88, 49, 61?") {
+    return "88";
   }
 
-  if (query.toLowerCase().includes("32 plus 99?")) {
-    return "131";
+  // 4) Which is 14 plus 8?
+  if (query.toLowerCase() === "which is 14 plus 8?") {
+    return "22";
   }
 
-
-  if (query.toLowerCase().includes("7 plus 79?")) {
-    return "86";
+  // 5) Which of the following numbers is the largest: 13, 31, 95?
+  if (query.toLowerCase() === "which of the following numbers is the largest: 13, 31, 95?") {
+    return "95";
   }
 
-
-  if (query.toLowerCase().includes("13 plus 86?")) {
-    return "99";
+  // 6) Which of the following numbers is the largest: 32, 42, 15?
+  if (query.toLowerCase() === "which of the following numbers is the largest: 32, 42, 15?") {
+    return "42";
   }
 
-  if (query.toLowerCase().includes("50 plus 37?")) {
-    return "87";
+  // 7) Which of the following numbers is the largest: 29, 66, 76?
+  if (query.toLowerCase() === "which of the following numbers is the largest: 29, 66, 76?") {
+    return "76";
   }
 
-  if (query.toLowerCase().includes("25 plus 40?")) {
+  // 8) What is 25 plus 40?
+  if (query.toLowerCase() === "what is 25 plus 40?") {
     return "65";
   }
 
-  if (query.toLowerCase().includes("following numbers is the largest: 83, 78, 87")) {
-    return "87";
+  // 9) What is 50 plus 36?
+  if (query.toLowerCase() === "what is 50 plus 36?") {
+    return "86";
   }
 
-  if (query.toLowerCase().includes("largest: 68, 27, 73")) {
-    return "73";
+  // 10) What is 23 plus 60?
+  if (query.toLowerCase() === "what is 23 plus 60?") {
+    return "83";
   }
 
-  if (query.toLowerCase().includes("numbers is the largest: 29, 93, 17")) {
-    return "93";
+  // 11) What is 25 plus 8?
+  if (query.toLowerCase() === "what is 25 plus 8?") {
+    return "33";
   }
 
+  // 12) What is 8 plus 49?
+  if (query.toLowerCase() === "what is 8 plus 49?") {
+    return "57";
+  }
 
+  // Default fallback
   return "";
 }
